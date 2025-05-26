@@ -34,12 +34,15 @@
             btnremover = new Button();
             bntconcluir = new Button();
             lblTotal = new Label();
-            viagem = new CheckBox();
+            cbviagem = new CheckBox();
             comboBox1 = new ComboBox();
             txtvalor = new TextBox();
             txttroco = new TextBox();
             lblValor = new Label();
             lblTroco = new Label();
+            txtnome = new TextBox();
+            label1 = new Label();
+            lblAviso = new Label();
             SuspendLayout();
             // 
             // listProdutos
@@ -95,7 +98,7 @@
             // 
             bntconcluir.BackColor = Color.Black;
             bntconcluir.ForeColor = Color.Yellow;
-            bntconcluir.Location = new Point(537, 157);
+            bntconcluir.Location = new Point(431, 274);
             bntconcluir.Name = "bntconcluir";
             bntconcluir.Size = new Size(75, 23);
             bntconcluir.TabIndex = 4;
@@ -113,15 +116,16 @@
             lblTotal.TabIndex = 5;
             lblTotal.Text = "total:R$";
             // 
-            // viagem
+            // cbviagem
             // 
-            viagem.AutoSize = true;
-            viagem.Location = new Point(539, 27);
-            viagem.Name = "viagem";
-            viagem.Size = new Size(169, 19);
-            viagem.TabIndex = 6;
-            viagem.Text = "deseja levar para a viagem?";
-            viagem.UseVisualStyleBackColor = true;
+            cbviagem.AutoSize = true;
+            cbviagem.ForeColor = Color.Yellow;
+            cbviagem.Location = new Point(539, 27);
+            cbviagem.Name = "cbviagem";
+            cbviagem.Size = new Size(169, 19);
+            cbviagem.TabIndex = 6;
+            cbviagem.Text = "deseja levar para a viagem?";
+            cbviagem.UseVisualStyleBackColor = true;
             // 
             // comboBox1
             // 
@@ -178,18 +182,52 @@
             lblTroco.Text = "troco a ser dado";
             lblTroco.Visible = false;
             // 
+            // txtnome
+            // 
+            txtnome.BackColor = Color.Black;
+            txtnome.ForeColor = Color.Yellow;
+            txtnome.Location = new Point(537, 158);
+            txtnome.Name = "txtnome";
+            txtnome.Size = new Size(119, 23);
+            txtnome.TabIndex = 13;
+            txtnome.TextChanged += txtnome_TextChanged;
+            // 
+            // label1
+            // 
+            label1.AutoSize = true;
+            label1.BackColor = Color.Yellow;
+            label1.Location = new Point(431, 166);
+            label1.Name = "label1";
+            label1.Size = new Size(93, 15);
+            label1.TabIndex = 14;
+            label1.Text = "nome do cliente";
+            // 
+            // lblAviso
+            // 
+            lblAviso.AutoSize = true;
+            lblAviso.ForeColor = Color.Yellow;
+            lblAviso.Location = new Point(511, 203);
+            lblAviso.Name = "lblAviso";
+            lblAviso.Size = new Size(236, 15);
+            lblAviso.TabIndex = 15;
+            lblAviso.Text = "Nome do cliente não pode estar em branco";
+            lblAviso.Visible = false;
+            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.DimGray;
             ClientSize = new Size(800, 450);
+            Controls.Add(lblAviso);
+            Controls.Add(label1);
+            Controls.Add(txtnome);
             Controls.Add(lblTroco);
             Controls.Add(lblValor);
             Controls.Add(txttroco);
             Controls.Add(txtvalor);
             Controls.Add(comboBox1);
-            Controls.Add(viagem);
+            Controls.Add(cbviagem);
             Controls.Add(lblTotal);
             Controls.Add(bntconcluir);
             Controls.Add(btnremover);
@@ -211,11 +249,14 @@
         private Button btnremover;
         private Button bntconcluir;
         private Label lblTotal;
-        private CheckBox viagem;
+        private CheckBox cbviagem;
         private ComboBox comboBox1;
         private TextBox txtvalor;
         private TextBox txttroco;
         private Label lblValor;
         private Label lblTroco;
+        private TextBox txtnome;
+        private Label label1;
+        private Label lblAviso;
     }
 }

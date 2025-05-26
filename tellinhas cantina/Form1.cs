@@ -59,6 +59,15 @@ namespace tellinhas_cantina
         private void bntfinalizar_Click(object sender, EventArgs e)
         {
             MessageBox.Show($"o valor total do pedido foi R${total:F2}");
+            Pedido pedido = new Pedido();
+            pedido.Cliente=txtnome.Text;
+            pedido.Pagamento = comboBox1.Text;
+            foreach(Produto produto in listCarrinho.Items)
+            {
+                pedido.Produtos.Add(produto);
+            }
+            pedido.Viagem = cbviagem.Checked;
+            
             Application.Exit();
         }
 
@@ -89,13 +98,23 @@ namespace tellinhas_cantina
         {
             if (txtvalor.Text != null)
             {
-                decimal dinheiro=0;
+                decimal dinheiro = 0;
                 Decimal.TryParse(txtvalor.Text, out dinheiro);
                 txttroco.Text = (dinheiro - total).ToString();
             }
 
         }
 
-        
+        private void txtnome_TextChanged(object sender, EventArgs e)
+        {
+            if (txtnome.Text == "")
+            {
+                lblAviso.Visible = true;
+            }
+            else 
+            {
+                lblAviso.Visible = false;
+            }
+        }
     }
 }

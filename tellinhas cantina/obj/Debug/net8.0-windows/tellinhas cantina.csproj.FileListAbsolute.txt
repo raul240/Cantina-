@@ -14,3 +14,21 @@ C:\Users\25162922\source\repos\tellinhas cantina\tellinhas cantina\obj\Debug\net
 C:\Users\25162922\source\repos\tellinhas cantina\tellinhas cantina\obj\Debug\net8.0-windows\tellinhas cantina.pdb
 C:\Users\25162922\source\repos\tellinhas cantina\tellinhas cantina\obj\Debug\net8.0-windows\tellinhas cantina.genruntimeconfig.cache
 C:\Users\25162922\source\repos\tellinhas cantina\tellinhas cantina\obj\Debug\net8.0-windows\ref\tellinhas cantina.dll
+C:\Users\25162922\OneDrive\Documentos\Cantina-\tellinhas cantina\bin\Debug\net8.0-windows\tellinhas cantina.exe
+C:\Users\25162922\OneDrive\Documentos\Cantina-\tellinhas cantina\bin\Debug\net8.0-windows\tellinhas cantina.deps.json
+C:\Users\25162922\OneDrive\Documentos\Cantina-\tellinhas cantina\bin\Debug\net8.0-windows\tellinhas cantina.runtimeconfig.json
+C:\Users\25162922\OneDrive\Documentos\Cantina-\tellinhas cantina\bin\Debug\net8.0-windows\tellinhas cantina.dll
+C:\Users\25162922\OneDrive\Documentos\Cantina-\tellinhas cantina\bin\Debug\net8.0-windows\tellinhas cantina.pdb
+C:\Users\25162922\OneDrive\Documentos\Cantina-\tellinhas cantina\obj\Debug\net8.0-windows\tellinhas_cantina.Form1.resources
+C:\Users\25162922\OneDrive\Documentos\Cantina-\tellinhas cantina\obj\Debug\net8.0-windows\tellinhas_cantina.Form2.resources
+C:\Users\25162922\OneDrive\Documentos\Cantina-\tellinhas cantina\obj\Debug\net8.0-windows\tellinhas cantina.csproj.GenerateResource.cache
+C:\Users\25162922\OneDrive\Documentos\Cantina-\tellinhas cantina\obj\Debug\net8.0-windows\tellinhas cantina.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\25162922\OneDrive\Documentos\Cantina-\tellinhas cantina\obj\Debug\net8.0-windows\tellinhas cantina.AssemblyInfoInputs.cache
+C:\Users\25162922\OneDrive\Documentos\Cantina-\tellinhas cantina\obj\Debug\net8.0-windows\tellinhas cantina.AssemblyInfo.cs
+C:\Users\25162922\OneDrive\Documentos\Cantina-\tellinhas cantina\obj\Debug\net8.0-windows\tellinhas cantina.csproj.CoreCompileInputs.cache
+C:\Users\25162922\OneDrive\Documentos\Cantina-\tellinhas cantina\obj\Debug\net8.0-windows\tellinhas cantina.sourcelink.json
+C:\Users\25162922\OneDrive\Documentos\Cantina-\tellinhas cantina\obj\Debug\net8.0-windows\tellinhas cantina.dll
+C:\Users\25162922\OneDrive\Documentos\Cantina-\tellinhas cantina\obj\Debug\net8.0-windows\refint\tellinhas cantina.dll
+C:\Users\25162922\OneDrive\Documentos\Cantina-\tellinhas cantina\obj\Debug\net8.0-windows\tellinhas cantina.pdb
+C:\Users\25162922\OneDrive\Documentos\Cantina-\tellinhas cantina\obj\Debug\net8.0-windows\tellinhas cantina.genruntimeconfig.cache
+C:\Users\25162922\OneDrive\Documentos\Cantina-\tellinhas cantina\obj\Debug\net8.0-windows\ref\tellinhas cantina.dll

@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\25162922\\source\\repos\\tellinhas cantina\\tellinhas cantina\\tellinhas cantina.csproj": {}
+    "C:\\Users\\25162922\\OneDrive\\Documentos\\Cantina-\\tellinhas cantina\\tellinhas cantina.csproj": {}
   },
   "projects": {
-    "C:\\Users\\25162922\\source\\repos\\tellinhas cantina\\tellinhas cantina\\tellinhas cantina.csproj": {
+    "C:\\Users\\25162922\\OneDrive\\Documentos\\Cantina-\\tellinhas cantina\\tellinhas cantina.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\25162922\\source\\repos\\tellinhas cantina\\tellinhas cantina\\tellinhas cantina.csproj",
+        "projectUniqueName": "C:\\Users\\25162922\\OneDrive\\Documentos\\Cantina-\\tellinhas cantina\\tellinhas cantina.csproj",
         "projectName": "tellinhas cantina",
-        "projectPath": "C:\\Users\\25162922\\source\\repos\\tellinhas cantina\\tellinhas cantina\\tellinhas cantina.csproj",
+        "projectPath": "C:\\Users\\25162922\\OneDrive\\Documentos\\Cantina-\\tellinhas cantina\\tellinhas cantina.csproj",
         "packagesPath": "C:\\Users\\25162922\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\25162922\\source\\repos\\tellinhas cantina\\tellinhas cantina\\obj\\",
+        "outputPath": "C:\\Users\\25162922\\OneDrive\\Documentos\\Cantina-\\tellinhas cantina\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
