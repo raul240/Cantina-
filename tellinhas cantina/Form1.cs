@@ -4,6 +4,7 @@ namespace tellinhas_cantina
     {
 
         decimal total = 0;
+        decimal dinheiro = 0;
         public Form1()
         {
             InitializeComponent();
@@ -29,7 +30,7 @@ namespace tellinhas_cantina
 
         private void listBox2_SelectedIndexChanged(object sender, EventArgs e)
         {
-
+            
         }
 
         private void listBox1_SelectedIndexChanged(object sender, EventArgs e)
@@ -50,10 +51,16 @@ namespace tellinhas_cantina
 
         private void btnremover_Click(object sender, EventArgs e)
         {
+            if (listCarrinho.Items.Count == 0)
+            {
+                MessageBox.Show("Não tem nenhum produto para ser removido");
+                return;
+            }
             Produto produtoSelecionado = (Produto)listCarrinho.SelectedItem;
             listCarrinho.Items.Remove(listCarrinho.SelectedItem);
             total -= produtoSelecionado.valor;
             lblTotal.Text = $"tatal R$ {total:F2}";
+            
         }
 
         private void bntfinalizar_Click(object sender, EventArgs e)
@@ -67,8 +74,21 @@ namespace tellinhas_cantina
                 pedido.Produtos.Add(produto);
             }
             pedido.Viagem = cbviagem.Checked;
+            ListaPedido.pedidos.Add(pedido);
+            listCarrinho.Items.Clear();
+            comboBox1.SelectedIndex = -1;
+            txtnome.Text = "";
+            txttroco.Text="";
+            txtvalor.Text="";
+            lblTotal.ResetText();
+            total = 0;
+            dinheiro = 0;
+            cbviagem.Checked = false;
+            Form2 form2 = new Form2();
+            form2.Show();
             
-            Application.Exit();
+
+            
         }
 
         private void textBox1_TextChanged(object sender, EventArgs e)
@@ -78,27 +98,39 @@ namespace tellinhas_cantina
 
         private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
         {
-            if (comboBox1.SelectedItem.ToString() == "Dinheiro")
-            {
-                txttroco.Visible = true;
-                txtvalor.Visible = true;
-                lblValor.Visible = true;
-                lblTroco.Visible = true;
-            }
-            else
+
+
+            if (comboBox1.SelectedItem == null)
             {
                 txttroco.Visible = false;
                 txtvalor.Visible = false;
                 lblValor.Visible = false;
                 lblTroco.Visible = false;
             }
+            else if (comboBox1.SelectedItem.ToString() == "Dinheiro")
+            {
+                txttroco.Visible = true;
+                txtvalor.Visible = true;
+                lblValor.Visible = true;
+                lblTroco.Visible = true;
+            }
+            else 
+            {
+                txttroco.Visible = false;
+                txtvalor.Visible = false;
+                lblValor.Visible = false;
+                lblTroco.Visible = false;
+            }
+
+
+
         }
 
         private void txtvalor_TextChanged(object sender, EventArgs e)
         {
             if (txtvalor.Text != null)
             {
-                decimal dinheiro = 0;
+               
                 Decimal.TryParse(txtvalor.Text, out dinheiro);
                 txttroco.Text = (dinheiro - total).ToString();
             }

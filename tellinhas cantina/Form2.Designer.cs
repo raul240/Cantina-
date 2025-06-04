@@ -30,6 +30,7 @@
         {
             listPreparando = new ListBox();
             listEntregue = new ListBox();
+            btPronto = new Button();
             SuspendLayout();
             // 
             // listPreparando
@@ -40,8 +41,9 @@
             listPreparando.ItemHeight = 15;
             listPreparando.Location = new Point(12, 12);
             listPreparando.Name = "listPreparando";
-            listPreparando.Size = new Size(255, 94);
+            listPreparando.Size = new Size(830, 94);
             listPreparando.TabIndex = 0;
+            listPreparando.SelectedIndexChanged += listPreparando_SelectedIndexChanged;
             // 
             // listEntregue
             // 
@@ -49,10 +51,23 @@
             listEntregue.ForeColor = Color.Yellow;
             listEntregue.FormattingEnabled = true;
             listEntregue.ItemHeight = 15;
-            listEntregue.Location = new Point(12, 142);
+            listEntregue.Location = new Point(12, 140);
             listEntregue.Name = "listEntregue";
-            listEntregue.Size = new Size(255, 94);
+            listEntregue.Size = new Size(830, 94);
             listEntregue.TabIndex = 1;
+            listEntregue.SelectedIndexChanged += listEntregue_SelectedIndexChanged;
+            // 
+            // btPronto
+            // 
+            btPronto.BackColor = Color.Black;
+            btPronto.ForeColor = Color.Yellow;
+            btPronto.Location = new Point(854, 109);
+            btPronto.Name = "btPronto";
+            btPronto.Size = new Size(199, 23);
+            btPronto.TabIndex = 2;
+            btPronto.Text = "pronto";
+            btPronto.UseVisualStyleBackColor = false;
+            btPronto.Click += btPronto_Click;
             // 
             // Form2
             // 
@@ -60,10 +75,12 @@
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.DimGray;
             ClientSize = new Size(1077, 430);
+            Controls.Add(btPronto);
             Controls.Add(listEntregue);
             Controls.Add(listPreparando);
             Name = "Form2";
             Text = "Form2";
+            Load += Form2_Load;
             ResumeLayout(false);
         }
 
@@ -71,5 +88,6 @@
 
         private ListBox listPreparando;
         private ListBox listEntregue;
+        private Button btPronto;
     }
 }
