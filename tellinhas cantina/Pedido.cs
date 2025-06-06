@@ -25,7 +25,7 @@ namespace tellinhas_cantina
             Cliente = cliente;
             Produtos = produtos;
             Viagem = viagem;
-            this.status = Status.status.PREPARANDO;
+            this.status = Status.status.PEDINDO;
 
         }
         public Pedido()
@@ -40,13 +40,12 @@ namespace tellinhas_cantina
         }
         public override string ToString()
         {
-            string novo= "";
+            string novo= " ";
             foreach (Produto produto in Produtos)
             {
-                novo = String.Concat(novo, produto.nome);
+                novo = String.Concat(novo , produto. nome);
             }
-            return $"{Cliente}" +
-                $" - {novo}";
+            return $" {Cliente} - { novo } ";
 
 
         }

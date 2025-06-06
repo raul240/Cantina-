@@ -22,8 +22,16 @@ namespace tellinhas_cantina
         {
             foreach (Pedido pedido in ListaPedido.pedidos)
             {
-                listPreparando.Items.Add(pedido);
-
+                if (pedido.status == Status.status.PREPARANDO)
+                {
+                    listPreparando.Items.Add(pedido);
+                }
+                else if (pedido.status == Status.status.PRONTO)
+                {
+                    listEntregue.Items.Add(pedido);
+                }
+              
+                
                 
             }
 
@@ -40,6 +48,9 @@ namespace tellinhas_cantina
             if (listPreparando.SelectedItem != null)
             {
                 listEntregue.Items.Add(listPreparando.SelectedItem);
+                Pedido selecionado = (Pedido)listPreparando.SelectedItem;
+                selecionado.status = Status.status.PRONTO;
+                listPreparando.Items.Remove(selecionado);
             }
             else
             {

@@ -73,6 +73,7 @@ namespace tellinhas_cantina
             {
                 pedido.Produtos.Add(produto);
             }
+            pedido.status = Status.status.PREPARANDO;
             pedido.Viagem = cbviagem.Checked;
             ListaPedido.pedidos.Add(pedido);
             listCarrinho.Items.Clear();
