@@ -32,3 +32,4 @@ C:\Users\25162922\OneDrive\Documentos\Cantina-\tellinhas cantina\obj\Debug\net8.
 C:\Users\25162922\OneDrive\Documentos\Cantina-\tellinhas cantina\obj\Debug\net8.0-windows\tellinhas cantina.pdb
 C:\Users\25162922\OneDrive\Documentos\Cantina-\tellinhas cantina\obj\Debug\net8.0-windows\tellinhas cantina.genruntimeconfig.cache
 C:\Users\25162922\OneDrive\Documentos\Cantina-\tellinhas cantina\obj\Debug\net8.0-windows\ref\tellinhas cantina.dll
+C:\Users\25162922\OneDrive\Documentos\Cantina-\tellinhas cantina\obj\Debug\net8.0-windows\tellinhas_cantina.Form3.resources

@@ -43,6 +43,8 @@
             txtnome = new TextBox();
             label1 = new Label();
             lblAviso = new Label();
+            btbalcao = new Button();
+            btcozinha = new Button();
             SuspendLayout();
             // 
             // listProdutos
@@ -98,7 +100,7 @@
             // 
             bntconcluir.BackColor = Color.Black;
             bntconcluir.ForeColor = Color.Yellow;
-            bntconcluir.Location = new Point(431, 274);
+            bntconcluir.Location = new Point(698, 415);
             bntconcluir.Name = "bntconcluir";
             bntconcluir.Size = new Size(75, 23);
             bntconcluir.TabIndex = 4;
@@ -120,7 +122,7 @@
             // 
             cbviagem.AutoSize = true;
             cbviagem.ForeColor = Color.Yellow;
-            cbviagem.Location = new Point(539, 27);
+            cbviagem.Location = new Point(537, 187);
             cbviagem.Name = "cbviagem";
             cbviagem.Size = new Size(169, 19);
             cbviagem.TabIndex = 6;
@@ -206,12 +208,36 @@
             // 
             lblAviso.AutoSize = true;
             lblAviso.ForeColor = Color.Yellow;
-            lblAviso.Location = new Point(511, 203);
+            lblAviso.Location = new Point(537, 220);
             lblAviso.Name = "lblAviso";
             lblAviso.Size = new Size(236, 15);
             lblAviso.TabIndex = 15;
             lblAviso.Text = "Nome do cliente não pode estar em branco";
             lblAviso.Visible = false;
+            // 
+            // btbalcao
+            // 
+            btbalcao.BackColor = Color.Black;
+            btbalcao.ForeColor = Color.Yellow;
+            btbalcao.Location = new Point(2, 415);
+            btbalcao.Name = "btbalcao";
+            btbalcao.Size = new Size(75, 23);
+            btbalcao.TabIndex = 16;
+            btbalcao.Text = "balcao";
+            btbalcao.UseVisualStyleBackColor = false;
+            btbalcao.Click += btbalcao_Click;
+            // 
+            // btcozinha
+            // 
+            btcozinha.BackColor = Color.Black;
+            btcozinha.ForeColor = Color.Yellow;
+            btcozinha.Location = new Point(2, 386);
+            btcozinha.Name = "btcozinha";
+            btcozinha.Size = new Size(75, 23);
+            btcozinha.TabIndex = 17;
+            btcozinha.Text = "cozinha";
+            btcozinha.UseVisualStyleBackColor = false;
+            btcozinha.Click += btcozinha_Click;
             // 
             // Form1
             // 
@@ -219,6 +245,8 @@
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.DimGray;
             ClientSize = new Size(800, 450);
+            Controls.Add(btcozinha);
+            Controls.Add(btbalcao);
             Controls.Add(lblAviso);
             Controls.Add(label1);
             Controls.Add(txtnome);
@@ -258,5 +286,7 @@
         private TextBox txtnome;
         private Label label1;
         private Label lblAviso;
+        private Button btbalcao;
+        private Button btcozinha;
     }
 }

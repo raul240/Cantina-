@@ -8,6 +8,6 @@ namespace tellinhas_cantina
 {
     internal class Status
     {
-        public enum status { PRONTO, PREPARANDO, ENTREGUE,PEDINDO } 
+        public enum status { PRONTO, PREPARANDO, ENTREGUE,PEDINDO }  
     }
 }

@@ -44,6 +44,8 @@ namespace tellinhas_cantina
             foreach (Produto produto in Produtos)
             {
                 novo = String.Concat(novo , produto. nome);
+                
+
             }
             return $" {Cliente} - { novo } ";
 
