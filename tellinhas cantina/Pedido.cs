@@ -40,14 +40,26 @@ namespace tellinhas_cantina
         }
         public override string ToString()
         {
-            string novo= " ";
-            foreach (Produto produto in Produtos)
-            {
-                novo = String.Concat(novo , produto. nome);
-                
+            string novo = " ";
+            if (status == Status.status.PRONTO)
+                foreach (Produto produto in Produtos)
+                {
 
+                    novo = String.Concat(novo, produto.nome);
+
+
+                }
+            else
+            {
+                foreach (Produto produto in Produtos)
+                {
+                    if (produto.cozinha)
+                    {
+                        novo = String.Concat(novo, produto.nome, ", ");
+                    }
+                }
             }
-            return $" {Cliente} - { novo } ";
+                return $" {Cliente} - {novo} ";
 
 
         }

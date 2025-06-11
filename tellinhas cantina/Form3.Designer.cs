@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             listcozinha = new ListBox();
+            btcozinhap = new Button();
             SuspendLayout();
             // 
             // listcozinha
@@ -42,12 +43,25 @@
             listcozinha.Size = new Size(547, 94);
             listcozinha.TabIndex = 0;
             // 
+            // btcozinhap
+            // 
+            btcozinhap.BackColor = Color.Black;
+            btcozinhap.ForeColor = Color.Yellow;
+            btcozinhap.Location = new Point(638, 40);
+            btcozinhap.Name = "btcozinhap";
+            btcozinhap.Size = new Size(75, 23);
+            btcozinhap.TabIndex = 1;
+            btcozinhap.Text = "pronto";
+            btcozinhap.UseVisualStyleBackColor = false;
+            btcozinhap.Click += btcozinhap_Click;
+            // 
             // Form3
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.DimGray;
             ClientSize = new Size(800, 450);
+            Controls.Add(btcozinhap);
             Controls.Add(listcozinha);
             Name = "Form3";
             Text = "Form3";
@@ -58,5 +72,6 @@
         #endregion
 
         private ListBox listcozinha;
+        private Button btcozinhap;
     }
 }

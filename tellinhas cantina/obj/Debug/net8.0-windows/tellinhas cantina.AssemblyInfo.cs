@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("tellinhas cantina")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+61194dfdea7a92d1df24621f3939ef1f47f35011")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+8d1f7140fb123b6256d4351e265956930ae0cee7")]
 [assembly: System.Reflection.AssemblyProductAttribute("tellinhas cantina")]
 [assembly: System.Reflection.AssemblyTitleAttribute("tellinhas cantina")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

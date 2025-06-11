@@ -25,8 +25,23 @@ namespace tellinhas_cantina
                 {
                     listcozinha.Items.Add(pedido);
                 }
-                
-                }
+
             }
+        }
+
+        private void btcozinhap_Click(object sender, EventArgs e)
+        {
+            if (listcozinha.SelectedItem != null)
+            {
+                Pedido selecionado = (Pedido)listcozinha.SelectedItem;
+                selecionado.status = Status.status.PRONTO;
+                listcozinha.Items.Remove(selecionado);
+                
+            }
+            else
+            {
+                MessageBox.Show("Nenhum pedido selecionado.");
+            }
+        }
     }
 }

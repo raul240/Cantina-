@@ -30,9 +30,10 @@ namespace tellinhas_cantina
                 {
                     listEntregue.Items.Add(pedido);
                 }
-              
-                
-                
+
+
+
+
             }
 
 

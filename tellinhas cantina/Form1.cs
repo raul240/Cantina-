@@ -104,8 +104,7 @@ namespace tellinhas_cantina
             total = 0;
             dinheiro = 0;
             cbviagem.Checked = false;
-            Form2 form2 = new Form2();
-            form2.Show();
+            
 
 
 
@@ -171,6 +170,7 @@ namespace tellinhas_cantina
 
         private void btbalcao_Click(object sender, EventArgs e)
         {
+            Form2 form2 = new Form2();
             form2.Show();
         }
 
