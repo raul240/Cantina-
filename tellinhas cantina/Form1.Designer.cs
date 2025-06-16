@@ -45,6 +45,7 @@
             lblAviso = new Label();
             btbalcao = new Button();
             btcozinha = new Button();
+            btchamada = new Button();
             SuspendLayout();
             // 
             // listProdutos
@@ -239,12 +240,25 @@
             btcozinha.UseVisualStyleBackColor = false;
             btcozinha.Click += btcozinha_Click;
             // 
+            // btchamada
+            // 
+            btchamada.BackColor = Color.Black;
+            btchamada.ForeColor = Color.Yellow;
+            btchamada.Location = new Point(2, 357);
+            btchamada.Name = "btchamada";
+            btchamada.Size = new Size(75, 23);
+            btchamada.TabIndex = 18;
+            btchamada.Text = "chamada";
+            btchamada.UseVisualStyleBackColor = false;
+            btchamada.Click += btchamada_Click;
+            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.DimGray;
             ClientSize = new Size(800, 450);
+            Controls.Add(btchamada);
             Controls.Add(btcozinha);
             Controls.Add(btbalcao);
             Controls.Add(lblAviso);
@@ -288,5 +302,6 @@
         private Label lblAviso;
         private Button btbalcao;
         private Button btcozinha;
+        private Button btchamada;
     }
 }

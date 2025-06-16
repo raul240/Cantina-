@@ -104,7 +104,7 @@ namespace tellinhas_cantina
             total = 0;
             dinheiro = 0;
             cbviagem.Checked = false;
-            
+
 
 
 
@@ -178,6 +178,12 @@ namespace tellinhas_cantina
         {
             Form3 form3 = new Form3();
             form3.Show();
+        }
+
+        private void btchamada_Click(object sender, EventArgs e)
+        {
+            Form4 form4 = new Form4();
+            form4.Show();
         }
     }
 }

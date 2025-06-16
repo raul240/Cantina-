@@ -35,7 +35,7 @@ namespace tellinhas_cantina
             {
                 Pedido selecionado = (Pedido)listcozinha.SelectedItem;
                 selecionado.status = Status.status.PRONTO;
-                listcozinha.Items.Remove(selecionado);
+                listcozinha.Items.Remove(selecionado) ;
                 
             }
             else
