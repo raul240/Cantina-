@@ -61,12 +61,19 @@ namespace tellinhas_cantina
                 MessageBox.Show("Não tem nenhum produto para ser removido");
                 return;
             }
-            Produto produtoSelecionado = (Produto)listCarrinho.SelectedItem;
-            listCarrinho.Items.Remove(listCarrinho.SelectedItem);
-            total -= produtoSelecionado.valor;
-            lblTotal.Text = $"tatal R$ {total:F2}";
+            else if (listCarrinho.SelectedItem != null)
+            {
+                Produto produtoSelecionado = (Produto)listCarrinho.SelectedItem;
+                listCarrinho.Items.Remove(listCarrinho.SelectedItem);
+                total -= produtoSelecionado.valor;
+                lblTotal.Text = $"tatal R$ {total:F2}";
+            }
+            else
+            {
+                MessageBox.Show("Selecione um produto para remover");
+            }
 
-        }
+            }
 
         private void bntfinalizar_Click(object sender, EventArgs e)
         {
